@@ -1,0 +1,46 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "indentation": 4,
+    "max-empty-lines": 2,
+    "no-empty-source": null,
+    "at-rule-no-unknown": null,
+    "at-rule-empty-line-before": [
+      "always", {
+        "except": ["first-nested"],
+        "ignore": ["after-comment", "blockless-after-same-name-blockless"],
+        "ignoreAtRules": [ "else" ]
+      }
+    ],
+    "block-opening-brace-newline-after":"always",
+    "block-closing-brace-newline-after": [
+      "always", {
+        "ignoreAtRules": [ "if", "else" ]
+      }
+    ],
+    "scss/at-rule-no-unknown": true,
+    "no-descending-specificity": null,
+    "declaration-empty-line-before": [
+      "never", {
+        "ignore": ["after-comment"]
+      }      
+    ],
+    "rule-empty-line-before": [
+      "always-multi-line", {
+        "ignore": ["after-comment", "first-nested"]
+      }
+    ],
+    "scss/at-else-closing-brace-newline-after": "always-last-in-chain",
+    "scss/at-else-closing-brace-space-after": "always-intermediate",
+    "scss/at-else-empty-line-before": "never",
+    "scss/at-if-closing-brace-newline-after": "always-last-in-chain",
+    "scss/at-if-closing-brace-space-after": "always-intermediate",
+    "declaration-block-no-shorthand-property-overrides": null,
+    "color-hex-case": "upper",
+    "color-hex-length": "long",
+    "number-leading-zero": "never"
+  }
+}

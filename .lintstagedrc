@@ -1,0 +1,4 @@
+{
+  "*.js": ["npm run fix:js", "git add"],
+  "*.scss": ["npm run fix:styles", "git add"]
+}

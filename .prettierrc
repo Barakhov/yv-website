@@ -1,0 +1,29 @@
+{
+  "printWidth": 90,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.jsxSingleQuote": true,
+  "prettier.disableLanguages": [
+    "vue",
+    "css",
+    "scss",
+    "sass",
+    "yaml",
+    "md"
+  ],
+  "overrides": [
+    {
+      "files": "**/*.yml",
+      "options": {
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": "**/*.json",
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+# Welcome to Payvision's Jekyll + Webpack!
+#
+# This config file contains the config of your webpages
+# You may also want to update webpack.config.js
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# Site settings
+title: Payvision
+email: c.orbea@payvision.com
+description: International transaction payment processing
+baseurl: '' # the subpath of your site, e.g. /blog
+# url: ""
+url: 'https://dev.payvision.tech' # the base hostname & protocol for your site, e.g. http://example.com
+permalink: pretty
+theme_color: 'ff7d6e'
+logo: assets/icons/favicons/favicon-310.png
+twitter_username: payvision
+github_username: payvision
+authors:
+  - Carlos Orbea
+  - Alexander Barakhov
+#
+# Uncomment below _i18n multilanguage options
+# languages: ["en", "es", "nl", "de", "fr"]
+# exclude_from_localizations: ["assets", "CNAME", "src", "_scss"]
+# defaultLang: en
+# languageNames:
+#   es: Spanish
+#   en: English
+#   nl: Dutch
+#   de: German
+#   fr: French
+
+# Build settings
+# Uncomment multiple-language-plugin for i18n multilanguage feature
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-include-cache
+  # - jekyll-multiple-languages-plugin
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - src
+  - _scss
+  - package.json
+  - webpack.config.js
+  - README.md
+  - postcss.config.js
+  - package.json
+  - package-lock.json
+  - scsslint.yml
+  - build.sh
+  - deploy.sh
+  - ing-customers.md
+  - slicepay.md
+
+collections_dir: collections
+
+collections:
+  events:
+    output: false
+    permalink: about/:collection/:name/
+  insights:
+    output: true
+    permalink: payment-insights/:categories/:name/
+  press-releases:
+    output: true
+    permalink: about/press/:name/
+  press-mentions:
+    output: false
+    permalink: about/mentions/:name/    
+  faqs:
+    output: true
+    permalink: :collection/:name/
+  scheme-updates:
+    output: true
+    permalink: scheme-updates/:slug/
+  pages:
+    output: true
+    permalink: :name/
+  payment-methods:
+    output: true
+    permalink: :collection/:name/    

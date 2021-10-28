@@ -1,0 +1,13 @@
+# Jekyll
+_site
+.sass-cache
+.jekyll-metadata
+.jekyll-cache
+.bundle
+
+# Node.js
+node_modules
+
+# Webpack temporal chunks
+dist
+.vscode/tasks.json
